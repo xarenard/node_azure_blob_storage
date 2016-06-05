@@ -1,0 +1,15 @@
+
+# Editor
+.idea
+*~
+
+# Dependencies Module
+node_modules
+
+# Logs
+npm-debug.log*
+logs
+*.log
+
+# npm cache
+.npm

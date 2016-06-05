@@ -1,0 +1,21 @@
+{
+  "name": "node_azure_blob_storage",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test/lib/azure_blob_storage_test --reporter spec",
+    "pretest": "npm run lint",
+    "posttest": "echo 'the test has been run!'",
+    "lint": "jshint  **/lib/*.js"
+  },
+  "author": "Xavier Renard",
+  "license": "ISC",
+  "devDependencies": {
+    "jshint": "^2.9.2",
+    "azure-storage": "^0.6.0",
+    "chai": "^3.4.0",
+    "crypto": "0.0.3",
+    "mocha": "^2.3.3",
+    "nconf": "^0.8.2"
+  }
+}
