@@ -1,3 +1,5 @@
+"use strict";
+
 var azure = require("azure-storage");
 
 var azureBlobStorage = (function AzureBlobStorage() {
