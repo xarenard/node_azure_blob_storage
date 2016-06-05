@@ -18,7 +18,7 @@ const AZURE_CONFIG_DIR_PATH= path.join(TEST_FOLDER,"config");
 
 // Azure accesskey and storage account
 nconf.argv().env().file({file: path.join(AZURE_CONFIG_DIR_PATH, "config.json")});
-const ACCESS_KEY = nconf.get("AZURE_STORAGE_ACCESS_KEY");//'3CRrNkAksC7s+RW6ScbavXs+bafUAFkSTtSJ8YMY+2Vkl0XK4iOEKF8jDTJe6dKS3TsMtmGH3yMaoTCqPyYp5Q==';
+const ACCESS_KEY = nconf.get("AZURE_STORAGE_ACCESS_KEY");
 const STORAGE_ACCOUNT = nconf.get("AZURE_STORAGE_ACCOUNT");
 
 describe("Azure Blob Storage Test", function () {
@@ -49,7 +49,6 @@ describe("Azure Blob Storage Test", function () {
                         azure_utils.listBlobs(azureBlobService, AZURE_CONTAINER_NAME, function (err, result) {
                             assert.equal(0, result.numEntries, "There should be 0 blobs");
                             done();
-
                         });
                     });
                 });
@@ -95,7 +94,6 @@ describe("Azure Blob Storage Test", function () {
                         azure_utils.deleteBlob(azureBlobService, AZURE_CONTAINER_NAME, BLOB_FILE_NAME, null, function (err, result) {
                             done();
                         });
-
                     });
                 });
 
@@ -104,12 +102,10 @@ describe("Azure Blob Storage Test", function () {
                         azure_utils.listBlobs(azureBlobService, AZURE_CONTAINER_NAME, function (err, result) {
                             assert.equal(0, result.numEntries, "There should be 0 blobs");
                             done();
-
                         });
                     });
                 });
             });
-
         });
 
         describe("Deleting container".concat(":",AZURE_CONTAINER_NAME), function () {
@@ -121,5 +117,4 @@ describe("Azure Blob Storage Test", function () {
             });
         });
     });
-
 });
