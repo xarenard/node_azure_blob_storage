@@ -1,6 +1,6 @@
 {
   "name": "node_azure_blob_storage",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha test/lib/azure_blob_storage_test --reporter spec",
