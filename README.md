@@ -37,7 +37,8 @@ Azure Blob Storage Test
 In order to run the script, just execute npm test 
 
 ```bash
-user@home:~/project/azure_node_storage$npm test
+user@home:~/projects/node_azure_blob_storage$npm install
+user@home:~/projects/node_azure_blob_storage$npm test
 ```
 
 Both Azure storage access key and storage account have to be defined either by setting environment variables or by editing the configuration file (config.json)
