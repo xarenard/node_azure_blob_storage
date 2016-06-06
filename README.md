@@ -57,9 +57,4 @@ Edit config/config.json and set both AZURE_STORAGE_ACCESS_KEY and AZURE_STORAGE_
 
 
 
-## Developing
-
-
-
-### Tools
 
